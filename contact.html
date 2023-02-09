@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href="style2.css"/>
     <title>Contacts</title>
 </head>
-<body>
+<style>
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%/150%;
+
+  }
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+</style>
+<body>   
+   <div class="container">
+
     <a href="resume.html">←BACK</a>
-    <h1>Have something to tell me?</h1>
+    <div></div>
+    <h1 class="title">Have something to tell me?</h1>
 
     <form>
     <input id="name "type="name" placeholder="Enter name" name="name"><br>
@@ -14,10 +37,12 @@
 
     <button type="submit">Submit</button>
     <button type="reset">Reset</button>
-
     </form>
 
     <br>
-    <a href="https://github.com/JiAlbano">Github</a>
-    <a href="https://www.facebook.com/johnignacious.albano">Facebook</a>
-</body>
+    <div>
+    <a href="https://github.com/JiAlbano"> <i class="fa fa-github" style="font-size:48px;color:rgb(220, 220, 220)"></i></i></i></a>
+    <a href="https://www.facebook.com/johnignacious.albano" class="fa fa-facebook"></a>
+  </div>
+  </div>
+  </body>
