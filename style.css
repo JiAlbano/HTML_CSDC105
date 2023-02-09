@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #F78104;
+    --text-color: rgb(255, 255, 255);
+}
+ body {
+    font-family: Itim ;
+    background: rgb(37, 37, 37);
+    color:rgb(255, 255, 255);
+    margin: auto;
+ }
+ /*common design*/
+ img{
+
+    width: 100%;
+ }
+ a{
+    display: block;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px #333;
+    color: #F78104;
+ }
+ a:hover{
+    color: white;
+ }
+ .description{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight:400;
+    text-shadow: 1px 1px 1px #352315;
+    color: var(--text-color);
+ }
+.title{
+    color:#F78104;
+    text-shadow: #434343 1px 0px 10px ;
+    text-transform: uppercase;
+}
+
+.field_title{
+    font-size:1.6rem;
+    color: var(--text-color); 
+    font-weight: bold;
+   
+}
+.field_sub{
+    font-size: 1.2rem;
+    color:#7c8388;
+}
+.field_presub{
+    font-size: 1rem;
+    color:#ffffff;
+    font-weight: 200px;
+    margin: 0.8rem 0;
+}
+.profile_image img{
+        border-radius: 50%;
+}
+/*uninversal container*/
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background-image: linear-gradient( 135deg, #4e4c4c7a 5%, #131313bc 100%);
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+/*uninversal adjustment resolution*/
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;  
+        gap:7rem;
+    }
+}
+.profile{
+    grid-column: 1/-1;
+    margin-bottom: 2rem; 
+}
+.profile_container{
+    display:flex;
+    gap: 2rem
+}
+.profile_image{
+    max-width: 250px;
+}
+.profile_firstname{
+    color: rgb(255, 255, 255);
+    text-shadow: #837c7c5b 1px 0px 10px ;
+    font-size: 2;
+    font-size:clamp(1.19rem,8vw,1rem); 
+    text-transform: uppercase;
+    display:block;
+    margin-bottom: -0.4rem;
+}
+
+.profile_lastname{
+    color:var(--primary-color);
+    text-transform: uppercase;
+    font-weight:700;
+    font-size:clamp(2.5rem,15vw,4rem);
+}
+
+@media only screen and (max-width: 768px) {
+        .profile_container{
+            flex-direction: column;
+        }    
+}
+
+/*Hobbies&skills*/
+.hobby_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+/*group1 container*/
+.group1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*table design*/
+.table_container{
+    border-collapse: collapse;
+    margin: auto 0;
+    font-size: 0.9em;
+    min-width: 450px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(143, 140, 140);
+}   
+.table_container thead tr{
+    background-color:#373737;
+    color:white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table_container th,.table_container td{
+    padding: 12px 15px;
+
+}
+.table_container tbody tr{
+    border-bottom: 1px solid #dddd;
+}
+.table_container tbody tr:nth-of-type(odd){
+    background-color:#4e4a4ae9;
+}
+.table_container tbody tr:nth-of-type(even){
+    background-color:#f7f7f7e9;
+}
+.table_container tbody:last-of-type{
+    border-bottom: 2px solid #ffffff;
+}
+.table_container tbody tr.active_row{
+    font-weight: bold;
+    color: #0000;
+}
+/*additional info*/
+.add_item {
+margin: 2rem;
+
+}

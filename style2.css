@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    padding: center;
+    margin: center;
+}
+:root{
+    --primary-color: #F78104;
+    --text-color: rgb(255, 255, 255);
+}
+ body {
+    font-family: Itim ;
+    background: hsl(0, 0%, 15%);
+    
+    color:rgb(255, 255, 255);
+    margin: center;
+ }
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+
+.title{
+    color:#F78104;
+    text-shadow: #434343 1px 0px 10px ;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: underline;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #333;
+    color: #F78104;
+ }
+ a:hover{
+    color: white;
+ }
+
+ input{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    box-sizing: border-box;
+ }
+ input[type=name]{
+            background:#fff;
+            height: 1.5rem;
+            width: 15rem;
+            margin-bottom: 1rem;
+            border: none;
+            outline: none;
+            padding: 0 25px;
+            border-radius: 25px 25px 25px 25px;
+}
+input[type=email]{
+    background:#fff;
+    height: 1.5rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 25px 25px 25px;
+}
+button[type=submit]{    
+
+    border-radius: 10px 10px 10px 10px;
+}
+button[type=reset]{    
+    margin-left: 1rem;
+    border-radius: 10px 10px 10px 10px;
+}
+textarea{
+    background:#fff;
+    height: 10rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 10px 10px 10px 10px;
+}
+button:hover{
+    background-color: rgb(146, 146, 146);
+    transition: 0.2s;
+}
